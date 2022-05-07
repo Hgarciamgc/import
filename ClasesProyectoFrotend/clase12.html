@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --Text-Imput-Field: #F7F7F7;
+            --Hospital-Green: #ACD9B2;
+            --Dark:#232830;
+            --White:#FFFFFF;
+            --Black:#000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+         }
+        body{
+            margin: 0%;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .product-detail{
+            width: 360px;
+            padding-bottom: 24px;
+            position: absolute;
+            right: 0.5%;
+        }
+        .product-detail-close{
+            background: var(--White);
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 12px;
+            left: 6px;
+            z-index: 2;
+            padding: 12px;
+            border-radius: 50%;
+
+        }
+        .product-detail-close:hover{
+            cursor: pointer;
+        }
+
+        .product-detail > img:nth-child(2){
+            width: 100%;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 0 0 20px 20px;
+        }
+        .product-info{
+            margin: 24px 24px 0 24px
+        }
+        .product-info p:nth-child(1){
+            font-weight: bold;
+            font-size: var(--md);
+            margin-top: 12px;
+            margin-bottom: 0;        
+        }
+        .product-info p:nth-child(2){
+            font-size:  var(--md);
+            margin-bottom: 36px;
+            margin-top: 0px;
+            color: var(--very-light-pink);
+
+
+        }
+        .product-info p:nth-child(3){
+            font-size:  var(--sm);
+            margin-bottom: 36px;
+            margin-top: 0px;
+            color: var(--very-light-pink);
+
+
+        }
+        .primary-buttom{
+            background-color: var(--Hospital-Green);
+            border-radius: 8px;
+            border: none;
+            color: var(--White);
+            width: 100%;
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+            height: 40px;}
+        .add-to-cart-buttom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media (max-width: 640px) {
+            .product-detail{
+                width: 100%;
+                right: 0;
+            }
+       
+            
+        }
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+
+        <div class="product-detail-close">
+
+            <img src="./ProyectoFrontend/icons/icon_close.png" alt="close">
+        </div>
+
+
+        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+
+        <div class="product-info">
+            <p>$60,00</p>
+            <p>Bike</p>
+            <p>With its practical position, this bike also fullfils a decorative function, add your hall or workspace.</p>
+
+            <button class="primary-buttom add-to-cart-buttom">
+                <img src="./ProyectoFrontend/icons/bt_add_to_cart.svg" alt="add-to-cart">
+                Add to Cart
+            </button>
+        </div>
+
+    </aside>
+</body>
+</html>
